@@ -1,0 +1,22 @@
+.CardContainer {
+  width: 16rem;
+  height: 10rem;
+  background-color: rgb(219, 216, 216);
+  border-radius: 0.36rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  justify-content: center;
+}
+.CardContainer h2 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.CardContainer p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}

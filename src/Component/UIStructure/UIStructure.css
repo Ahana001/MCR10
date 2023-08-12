@@ -1,0 +1,23 @@
+.UIStructureContainer {
+  display: flex;
+  /* grid-template-columns: 25rem 1fr; */
+  /* margin: 0rem auto; */
+  /* max-width: 128rem; */
+  /* min-height: 100vh; */
+  position: relative;
+  overflow: hidden;
+}
+.LeftSideContainer {
+  border-right: 0.1rem solid var(--line-color);
+  position: fixed;
+  top: 0;
+  width: 25rem;
+  height: 100%;
+  overflow-y: auto;
+  background-color: black;
+}
+.RightSideContainer {
+  margin-left: 25rem;
+  width: 100%;
+  box-sizing: border-box;
+}

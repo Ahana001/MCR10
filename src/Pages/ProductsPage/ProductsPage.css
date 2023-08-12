@@ -1,0 +1,37 @@
+.HeaderFilters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 4rem;
+  font-size: 1.4rem;
+}
+.HeaderFilters h2 {
+  font-size: 2rem;
+}
+.HeaderFilters .checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.HeaderFilters select {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.HeaderFilters #LowStock {
+  cursor: pointer;
+}
+
+.HeaderFilters button {
+  color: white;
+  background-color: rgb(9, 145, 229);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.TableConatiner {
+  margin: 2rem 4rem;
+}

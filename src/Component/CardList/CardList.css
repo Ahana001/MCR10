@@ -1,0 +1,7 @@
+.CardListConatiner {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-left: 4rem;
+  margin-top: 4rem;
+}

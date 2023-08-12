@@ -1,0 +1,69 @@
+.AddNewProductPage {
+  margin-left: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.AddNewProductPage button {
+  color: white;
+  background-color: rgb(9, 145, 229);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.AddNewProductPage h2 {
+  font-size: 2rem;
+}
+
+.AddNewProductForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 40%;
+  font-size: 1.4rem;
+}
+
+.ProductDepartment,
+.ProductName,
+.ProductDescription,
+.ProductPrice,
+.ProductStock,
+.ProductSKU,
+.ProductSupplier,
+.ProductDelivered,
+.ProductImageUrl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.ProductDepartment select,
+.ProductDescription textarea,
+.ProductName input,
+.ProductPrice input,
+.ProductStock input,
+.ProductSKU input,
+.ProductSupplier input,
+.ProductDelivered input,
+.ProductImageUrl input {
+  padding: 0.8rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 0.36rem;
+  border: 0.1rem solid grey;
+}
+
+.ProductDepartment select {
+  cursor: pointer;
+  background-color: white;
+}
+
+.ProductDelivered input:disabled {
+  background-color: rgb(176, 173, 173);
+}

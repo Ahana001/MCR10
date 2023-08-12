@@ -1,0 +1,26 @@
+.Table {
+  font-size: 1.6rem;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+.Table th {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.Table th,
+.Table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.Table th {
+  background-color: #f2f2f2;
+}
+
+.Table img {
+  width: 10rem;
+}

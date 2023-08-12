@@ -53,10 +53,10 @@ export function DataReducer(state, action) {
         ...state,
         department: action.payload.department,
       };
-      localStorage.setItem(
-        "department",
-        JSON.stringify(action.payload.department)
-      );
+      // localStorage.setItem(
+      //   "department",
+      //   JSON.stringify(action.payload.department)
+      // );
 
       break;
     }
@@ -65,10 +65,10 @@ export function DataReducer(state, action) {
         ...state,
         lowStockItems: action.payload.lowStockItems,
       };
-      localStorage.setItem(
-        "lowStockItems",
-        JSON.stringify(action.payload.lowStockItems)
-      );
+      // localStorage.setItem(
+      //   "lowStockItems",
+      //   JSON.stringify(action.payload.lowStockItems)
+      // );
       break;
     }
     case ActionTypes.SET_SORT_BY: {
@@ -76,7 +76,7 @@ export function DataReducer(state, action) {
         ...state,
         sortBy: action.payload.sortBy,
       };
-      localStorage.setItem("sortBy", JSON.stringify(action.payload.sortBy));
+      // localStorage.setItem("sortBy", JSON.stringify(action.payload.sortBy));
       break;
     }
     case ActionTypes.ADD_NEW_PRODUCT: {

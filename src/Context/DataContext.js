@@ -35,7 +35,7 @@ export function DataContextProvider({ children }) {
           sortBy: "name",
         },
       });
-      localStorage.setItem("sortBy", JSON.stringify("name"));
+      // localStorage.setItem("sortBy", JSON.stringify("name"));
     } else {
       dispatch({
         type: ActionTypes.INITIAL_SET_SORT_BY,
@@ -50,7 +50,7 @@ export function DataContextProvider({ children }) {
           department: "AllDepartments",
         },
       });
-      localStorage.setItem("department", JSON.stringify("AllDepartments"));
+      // localStorage.setItem("department", JSON.stringify("AllDepartments"));
     } else {
       dispatch({
         type: ActionTypes.INITIAL_SET_DEPARTMENT,
@@ -65,7 +65,7 @@ export function DataContextProvider({ children }) {
           lowStockItems: false,
         },
       });
-      localStorage.setItem("lowStockItems", false);
+      // localStorage.setItem("lowStockItems", false);
     } else {
       dispatch({
         type: ActionTypes.INITIAL_SET_LOW_STOCK_ITEMS,

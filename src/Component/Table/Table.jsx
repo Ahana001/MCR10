@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import "./Table.css";
 import { tableHeaders } from "./constants";
 
 export function Table({ filteredTableBody }) {
+  const navigator = useNavigate();
   return (
     <table className="Table">
       <thead>
@@ -14,7 +16,12 @@ export function Table({ filteredTableBody }) {
       <tbody>
         {filteredTableBody.map((oneRow) => {
           return (
-            <tr key={oneRow.id}>
+            <tr
+              key={oneRow.id}
+              onClick={() => {
+                navigator(`/product/${oneRow.id}`);
+              }}
+            >
               {tableHeaders.map((oneColumnOfOneRow) => {
                 if (oneColumnOfOneRow === "image") {
                   return (

@@ -5,6 +5,7 @@ import { DepartmentPage } from "./Pages/DepartmentPage/DepartmentPage";
 import { ProductsPage } from "./Pages/ProductsPage/ProductsPage";
 import { ErrorPage } from "./Pages/ErrorPage/ErrorPage";
 import { AddNewProductPage } from "./Pages/AddNewProductPage/AddNewProductPage";
+import { SingleProductPage } from "./Pages/SingleProductPage/SingleProductPage";
 
 function App() {
   return (
@@ -14,6 +15,11 @@ function App() {
         <Route path="/department" element={<DepartmentPage />}></Route>
         <Route path="/products" element={<ProductsPage />}></Route>
         <Route path="/addProduct" element={<AddNewProductPage />}></Route>
+        <Route
+          path="/product/:productID"
+          element={<SingleProductPage />}
+        ></Route>
+
         <Route path="/404" element={<ErrorPage />}></Route>
         <Route path="*" element={<Navigate to="/404" />}></Route>
       </Routes>

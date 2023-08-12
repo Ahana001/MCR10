@@ -24,3 +24,7 @@
 .Table img {
   width: 10rem;
 }
+
+.Table tr {
+  cursor: pointer;
+}

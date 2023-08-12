@@ -9,8 +9,8 @@ export function DataContextProvider({ children }) {
 
   const localStorageInventory = localStorage.getItem("inventory");
   const localStorageSortBy = localStorage.getItem("sortBy");
-  const localStorageDepartment = localStorage.getItem("department");
-  const localStorageLowStockItems = localStorage.getItem("lowStockItems");
+  const localStorageDepartment = null;
+  const localStorageLowStockItems = null;
 
   useEffect(() => {
     if (!localStorageInventory) {
@@ -42,6 +42,7 @@ export function DataContextProvider({ children }) {
         payload: { sortBy: JSON.parse(localStorageSortBy) },
       });
     }
+
     if (!localStorageDepartment) {
       dispatch({
         type: ActionTypes.INITIAL_SET_DEPARTMENT,

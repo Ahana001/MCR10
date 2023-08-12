@@ -12,15 +12,6 @@ export function ProductsPage() {
   const { state, dispatch } = useContext(DataContext);
   let filteredProducts = useFilterDataHook();
 
-  if (
-    !state.inventory ||
-    !state.department ||
-    !state.sortBy ||
-    !state.lowStockItems
-  ) {
-    return <h2>Loarding....</h2>;
-  }
-
   const set = new Set();
   state.inventory.forEach((item) => set.add(item.department));
   const departments = Array.from(set);

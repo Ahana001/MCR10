@@ -1,3 +1,4 @@
+import { v4 as uuid } from "uuid";
 export const ActionTypes = {
   INITIAL_SET_INVENTORY: "INITIAL_SET_INVENTORY",
   INITIAL_SET_SORT_BY: "INITIAL_SET_SORT_BY",
@@ -81,7 +82,7 @@ export function DataReducer(state, action) {
     case ActionTypes.ADD_NEW_PRODUCT: {
       const newUpdatedInventory = [
         ...state.inventory,
-        { ...action.payload.product, id: state.inventory.length },
+        { ...action.payload.product, id: uuid() },
       ];
       result = {
         ...state,

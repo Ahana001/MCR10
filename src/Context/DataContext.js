@@ -8,7 +8,7 @@ export function DataContextProvider({ children }) {
   const [state, dispatch] = useReducer(DataReducer, initialState);
 
   const localStorageInventory = localStorage.getItem("inventory");
-  const localStorageSortBy = localStorage.getItem("sortBy");
+  const localStorageSortBy = null;
   const localStorageDepartment = null;
   const localStorageLowStockItems = null;
 
